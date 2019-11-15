@@ -1,23 +1,40 @@
 import React from "react";
-import LogoNavBar from "../components/img/descarga.png";
+import LogoNavBar from "../components/img/claqueta.svg";
 import "../components/styles/navbar.css";
 
 class NavBar extends React.Component {
   render() {
     return (
-      <div className="Navbar">
-        <div className="container-fluid">
-          <a className="Navbar__brand">
-            <img
-              className="Navbar__brand-logo"
-              src={LogoNavBar}
-              alt="LogoNav"
-            />
-            <span className="font-weight-light">Pelis</span>
-            <span className="font-weight-bold">Cabe</span>
-          </a>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">
+          PelisCabe
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">
+                Home <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Listas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Peliculas
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Login
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav> 
     );
   }
 }
