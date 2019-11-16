@@ -14,7 +14,7 @@ class NavBar extends React.Component {
           <ul className="navbar-nav mr-auto">
             <li classNmae="nav-item active">
               <a className="nav-link" href="#">
-                Home <span class="sr-only">(current)</span>
+                Home <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
